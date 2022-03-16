@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import Menu from "./components/menu"
+import Main from "./components/main"
+import {createGlobalStyle} from "styled-components"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const GlobalStyle = createGlobalStyle`
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Hubballi', cursive;
+  }
+  ::-webkit-scrollbar{
+    width:11px;
+  }
+  ::-webkit-scrollbar-track{
+    background:#2F131E;
+  }
+  ::-webkit-scrollbar-thumb{
+    width:7px;
+    background: #fff;
+    border-radius: 30px;
+  }
+`
+
+
+const App = () => {
+
+  return(
+    <div>
+      <GlobalStyle/>
+      <Menu item="Inicio"
+      item2="Playlists"
+      item3="Álbuns"
+      item4="Singles"/>
+      <Main/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
