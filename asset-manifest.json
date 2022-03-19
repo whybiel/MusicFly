@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/MusicFly/static/js/main.7d622464.js",
+    "static/js/787.fd76fbc1.chunk.js": "/MusicFly/static/js/787.fd76fbc1.chunk.js",
+    "index.html": "/MusicFly/index.html",
+    "main.7d622464.js.map": "/MusicFly/static/js/main.7d622464.js.map",
+    "787.fd76fbc1.chunk.js.map": "/MusicFly/static/js/787.fd76fbc1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.7d622464.js"
+  ]
+}
